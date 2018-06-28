@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/quotes_back_white"
+    android:textColor="#434343"
+    android:textSize="16sp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:id="@+id/quotes_block_text_id"
+    tools:ignore="MissingPrefix"
+    fontPath="fonts/playfairRegular.ttf"
+    android:gravity="center_vertical"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp"
+    >
+
+
+</TextView>
