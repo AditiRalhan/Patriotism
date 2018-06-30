@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label=" PATRIOTISM"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -17,14 +17,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SongsActivity" />
-        <activity android:name=".VideosActivity" />
-        <activity android:name=".QuotesActivity" />
-        <activity android:name=".FreedomFighterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".NationalistWiki" />
-        <activity android:name=".videos2"></activity>
+        <activity android:name=".SongsActivity"
+            android:label="SONGS"/>
+        <activity android:name=".VideosActivity"
+            android:label="VIDEO SONGS"/>
+        <activity android:name=".QuotesActivity"
+            android:label="QUOTES"/>
+        <activity android:name=".FreedomFighterActivity"
+            android:label="FREEDOM FIGHTERS"/>
+        <activity android:name=".LoginActivity"
+android:label="LOGIN"
+            />
+        <activity android:name=".RegisterActivity"
+            android:label="REGISTRATION"/>
+        <activity android:name=".NationalistWiki"
+            android:label="WIKIPEDIA"/>
+        <activity android:name=".videos2"
+            android:label="VIDEO SONGS"/>
+        <activity android:name=".NewSongs"
+            android:label="NEW SONGS"/>
+        <activity android:name=".OldSongs"
+            android:label="OLD SONGS"></activity>
     </application>
 
 </manifest>

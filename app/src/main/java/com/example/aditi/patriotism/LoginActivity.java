@@ -41,6 +41,14 @@ public class LoginActivity extends AppCompatActivity
         reg.setPaintFlags(reg.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
         progressBar=(ProgressBar)findViewById(R.id.progressbar);
         progressBar.setVisibility(View.GONE);
+
+
+        if(mAuth.getCurrentUser()!=null)
+        {
+            finish();
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+
+        }
     }
 
     public void SignIn(View view)
@@ -84,6 +92,7 @@ public class LoginActivity extends AppCompatActivity
                 if(task.isSuccessful())
                 {
                     user1 = mAuth.getCurrentUser();
+
                     if(user1!=null)
                     {
                         if (user1.isEmailVerified())

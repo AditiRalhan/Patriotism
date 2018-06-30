@@ -9,16 +9,27 @@ import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
 {
+    private FirebaseAuth firebaseAuth1;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        firebaseAuth1 = FirebaseAuth.getInstance();
+
+        if (firebaseAuth1.getCurrentUser() == null) {
+            finish();
+            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        }
     }
 
 
@@ -43,9 +54,11 @@ public class MainActivity extends AppCompatActivity
                 setLocale("en");
                 return true;
             case R.id.logout:
+                firebaseAuth1.signOut();
+                Toast.makeText(MainActivity.this, "Successfuly Logged Out!", Toast.LENGTH_SHORT).show();
+                finish();
                 Intent i =new Intent(getApplicationContext(),LoginActivity.class);
                 startActivity(i);
-                finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
