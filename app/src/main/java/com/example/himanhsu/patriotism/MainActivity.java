@@ -28,5 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(quotesintent);
             }
         });
+
+        Button patriotsButton=findViewById(R.id.launch_patriots_activity);
+        patriotsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent patriotsIntent=new Intent(MainActivity.this,ThePatriots.class);
+                startActivity(patriotsIntent);
+            }
+        });
     }
 }

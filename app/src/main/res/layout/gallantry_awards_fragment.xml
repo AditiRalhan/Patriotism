@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="175dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/fragment_column_one">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="War Time Awards"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:background="@color/darkBrown"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/awards_param_vir_chakra_id">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/param_vir"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="#6e030303"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Param Vir Chakra"
+            android:textSize="14sp"
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/playfairRegular.ttf"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/awards_maha_vir_chakra_id">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/maha_vir" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="#6e030303"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maha Vir Chakra"
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/playfairRegular.ttf"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/awards_vir_chakra_id"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/vir_chakra" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="#6e030303"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    Vir Chakra    "
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/playfairRegular.ttf"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/param_text_id"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="520dp"
+        android:layout_toEndOf="@id/fragment_column_one"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="2dp"
+        android:background="@color/darkBrown"
+        android:id="@+id/fragment_column_two"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/fragment_column_two">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="Peace Time Awards"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkBrown"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/awards_ashoka_chakra_id">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ashoka_chakra"/>
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="#6e030303"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ashoka Chakra"
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/playfairRegular.ttf"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/awards_kirti_chakra_id">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/kirti_chakra" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="#6e030303"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirti Chakra"
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/playfairRegular.ttf"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/awards_shaurya_chakra_id">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="@drawable/shaurya_chakra" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:src="#6e030303"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shaurya Chakra"
+                android:textSize="14sp"
+                tools:ignore="MissingPrefix"
+                fontPath="fonts/playfairRegular.ttf"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="#fff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

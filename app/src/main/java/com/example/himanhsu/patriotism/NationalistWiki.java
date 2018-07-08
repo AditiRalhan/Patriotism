@@ -32,6 +32,7 @@ public class NationalistWiki extends AppCompatActivity {
             }
         });
 
+
         webView.loadUrl(url);
 
 

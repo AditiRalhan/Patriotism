@@ -61,7 +61,13 @@ public class GridRecyclerAdapter extends RecyclerView.Adapter<GridRecyclerAdapte
         holder.FighterName.setText(temp.NationalistName);
 
         String imageurl=temp.LinkToPhoto;
+        if(!imageurl.equals(""))
         Picasso.with(context).load(imageurl).placeholder(R.drawable.loadingicon).into(holder.FighterPic);
+        else
+        {
+            if(temp.NationalistName.equals("Ramaswamy Parameshwaran"))
+                holder.FighterPic.setImageResource(R.drawable.ramaswamy);
+        }
     }
 
 

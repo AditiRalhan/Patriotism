@@ -20,5 +20,12 @@ public class NationalistData {
         this.LinkToData=LinkToData;
     }
 
+    NationalistData(String name,String linkToPhoto,String linkToData)
+    {
+        this.NationalistName=name;
+        this.LinkToPhoto=linkToPhoto;
+        this.LinkToData=linkToData;
+    }
+
 
 }

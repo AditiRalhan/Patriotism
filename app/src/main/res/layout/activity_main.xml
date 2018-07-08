@@ -18,6 +18,7 @@
         android:id="@+id/launch_independence_activists_activvity"
         android:layout_gravity="center"/>
     </FrameLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -29,5 +30,18 @@
             android:layout_gravity="center_horizontal"
             android:id="@+id/launch_quotes_activity"/>
     </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the Patriots"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/launch_patriots_activity"/>
+    </FrameLayout>
+
 
 </LinearLayout>
