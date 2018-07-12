@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/telephone"
+            android:title="Contact Us" />
+
+    </group>
+
+    <item android:title="About Us">
+        <menu>
+            <item
+                android:id="@+id/naman"
+                android:icon="@drawable/userp"
+                android:title="Namandeep Singh" />
+            <item
+                android:id="@+id/aditi"
+                android:title="Aditi Ralhan"
+                android:icon="@drawable/userp"/>
+            <item
+                android:id="@+id/himanshu"
+                android:icon="@drawable/userp"
+                android:title="Himanshu Shekhar Chaurasia" />
+            <item
+                android:id="@+id/satvik"
+                android:icon="@drawable/userp"
+                android:title="Satvik Sabharwal" />
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/icon"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

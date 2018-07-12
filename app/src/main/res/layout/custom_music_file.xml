@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -25,13 +26,13 @@
 
     <TextView
         android:id="@+id/txtSinger"
-        android:textColor="#259e06"
+        android:textColor="#000"
         android:textSize="18sp"
         android:text="Singer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:layout_alignBottom="@+id/ivMusic"
         android:layout_toRightOf="@+id/ivMusic"
         android:layout_toEndOf="@+id/ivMusic" />
@@ -39,6 +40,8 @@
     <ImageView
         android:id="@+id/ivPlay"
         android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="3dp"
         android:layout_toLeftOf="@id/ivStop"
         android:src="@drawable/ic_play"
         android:layout_width="25dp"

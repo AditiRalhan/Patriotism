@@ -1,43 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aditi.patriotism">
+    package="com.example.admin.patriots">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label=" PATRIOTISM"
+        android:label="Patriotism"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".splash"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SongsActivity"
-            android:label="SONGS"/>
-        <activity android:name=".VideosActivity"
-            android:label="VIDEO SONGS"/>
-        <activity android:name=".QuotesActivity"
-            android:label="QUOTES"/>
-        <activity android:name=".FreedomFighterActivity"
-            android:label="FREEDOM FIGHTERS"/>
-        <activity android:name=".LoginActivity"
-android:label="LOGIN"
-            />
+        <activity
+            android:name=".MainActivity"
+            android:label="Patriotism"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
         <activity android:name=".RegisterActivity"
-            android:label="REGISTRATION"/>
-        <activity android:name=".NationalistWiki"
-            android:label="WIKIPEDIA"/>
-        <activity android:name=".videos2"
-            android:label="VIDEO SONGS"/>
-        <activity android:name=".NewSongs"
-            android:label="NEW SONGS"/>
-        <activity android:name=".OldSongs"
-            android:label="OLD SONGS"></activity>
+            android:label="Registeration"/>
+        <activity
+            android:name=".Linkedin"
+            android:label="Linkedin Profile" />
+        <activity
+            android:name=".SongsActivity"
+            android:label="Audio Songs" />
+        <activity android:name=".FreedomFighters"
+            android:label="The Patriots"/>
+        <activity android:name=".Nationalistwiki"
+            android:label="Wikipedia"/>
+        <activity android:name=".ThePatriots"
+            android:label="The Patriots"/>
+        <activity android:name=".QuotesActivity"
+            android:label="Quotes"/>
+        <activity android:name=".ChakraDetailsActivity" />
+        <activity
+            android:name=".YoutubeVideos"
+            android:label="Best Youtube Videos" />
+        <activity
+            android:name=".VideosActivity"
+            android:label="Video Songs" />
+        <activity android:name=".films"
+            android:label="Documentaries"/>
+        <activity android:name=".motivatevideos"
+            android:label="Motivational Patriotism"/>
+        <activity android:name=".defencevideos"
+            android:label="Indian Defence"></activity>
     </application>
 
 </manifest>
