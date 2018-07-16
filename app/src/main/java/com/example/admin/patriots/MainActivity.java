@@ -23,6 +23,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,18 +36,18 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private FirebaseAuth firebaseAuth1;
-    Button b1,b2,b3;
-Button quotes;
+    ImageButton b1,b2,b3;
+    ImageButton quotes;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        b1=findViewById(R.id.songs);
-        b2=findViewById(R.id.videos);
+        b1=findViewById(R.id.songsButton);
+        b2=findViewById(R.id.videoButton);
         b3=findViewById(R.id.freedomFighter);
-        quotes=findViewById(R.id.quotes12);
+        quotes=findViewById(R.id.quotesButton);
         firebaseAuth1 = FirebaseAuth.getInstance();
 
         if (firebaseAuth1.getCurrentUser() == null) {
