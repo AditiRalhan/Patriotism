@@ -58,13 +58,19 @@
             android:label="Best Youtube Videos" />
         <activity
             android:name=".VideosActivity"
-            android:label="Video Songs" />
+            android:configChanges="keyboardHidden|orientation|screenSize"
+
+            android:label="Video Songs"
+            />
         <activity android:name=".films"
-            android:label="Documentaries"/>
+            android:label="Documentaries"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity android:name=".motivatevideos"
-            android:label="Motivational Patriotism"/>
+            android:label="Motivational Patriotism"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity android:name=".defencevideos"
-            android:label="Indian Defence"></activity>
+            android:label="Indian Defence"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
     </application>
 
 </manifest>

@@ -23,6 +23,7 @@ public class YoutubePager extends FragmentStatePagerAdapter {
                 return new Motivating();
             case 4:
                 return new IndianDefence();
+
             default:
                 return null;
         }

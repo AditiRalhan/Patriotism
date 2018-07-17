@@ -13,7 +13,7 @@ public class YoutubeVideos extends AppCompatActivity {
     ViewPager viewPager;
     TabLayout tabLayout;
     ListView l;
-    String stations[]={"Mansarovar","New Aatish Market","Vivek Vihar","Shyam Nagar","Ram Nagar","Civil Lines" ,"Railway Station","Sindhi Camp","Chand Pole ","Choti Chaupar","Badi Chaupar"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
